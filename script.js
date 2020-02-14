@@ -1,6 +1,11 @@
 document.onmousemove = function(event) {
-  let x = event.x - 50;
-  let y = event.y - 50;
+  // let x = event.x - 50;
+  // let y = event.y - 50;
+  let centrX = document.documentElement.clientWidth / 2 - 50;
+  let centrY = document.documentElement.clientHeight / 2;
+  console.log(centrX, centrY);
+  let x = event.x - centrX;
+  let y = event.y - centrY;
   console.log("x = " + x, " y = " + y);
   document.querySelector(".eye_apple_border_left").style.transform =
     "rotate(" + 57.2958 * arcctg(x, y) + "deg)";

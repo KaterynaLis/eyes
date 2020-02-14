@@ -18,3 +18,12 @@
   bottom: 35px;
   border-radius: 100%;
 }
+
+.eyes_container {
+  height: 110px;
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -60px 0 0 -125px;
+}
